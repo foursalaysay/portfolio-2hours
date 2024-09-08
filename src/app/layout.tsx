@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 };
 
 import TopBar from "@/components/component/TopBar";
+import LeftSideBar from "@/components/component/LeftSideBar";
+import RightSidebar from "@/components/component/RightSideBar";
 
 export default function RootLayout({
   children,
@@ -30,8 +32,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
-        <TopBar />
-        {children}
+        <div className="w-screen h-screen">
+          <TopBar />\
+          <div className="flex gap-2 p-5 bg-black">
+            <LeftSideBar />
+            {children}
+            <RightSidebar />
+          </div>
+        </div>
+       
       </body>
     </html>
   );

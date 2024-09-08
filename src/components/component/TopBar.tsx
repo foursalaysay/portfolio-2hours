@@ -36,7 +36,7 @@ const links = [
 
 export default function TopBar() {
   return (
-    <div className='h-30 w-full py-5 px-10 bg-black flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center '>
+    <div className='h-20 w-full p-12 bg-black flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center '>
       
 
       {/* SEARCH BAR */}
@@ -57,7 +57,7 @@ export default function TopBar() {
         alt='Profile Image'
         className='rounded-full block lg:hidden'
       />
-        <h4 className='text-white'>John Kyle L. Salaysay</h4>
+        <h4 className='text-white block lg:hidden'>John Kyle L. Salaysay</h4>
         <Separator />
     </div>
      
