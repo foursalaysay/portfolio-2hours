@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 import TopBar from "@/components/component/TopBar";
 import LeftSideBar from "@/components/component/LeftSideBar";
 import RightSidebar from "@/components/component/RightSideBar";
+import BottomBar from "@/components/component/BottomBar";
 
 export default function RootLayout({
   children,
@@ -34,11 +35,12 @@ export default function RootLayout({
       >
         <div className="w-screen h-screen">
           <TopBar />\
-          <div className="flex gap-2 p-5 bg-black">
+          <div className="flex gap-2 px-5 bg-black">
             <LeftSideBar />
               {children}
             <RightSidebar />
           </div>
+          <BottomBar />
         </div>
        
       </body>

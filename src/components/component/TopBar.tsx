@@ -37,8 +37,6 @@ const links = [
 export default function TopBar() {
   return (
     <div className='h-20 w-full p-12 bg-black flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-center '>
-      
-
       {/* SEARCH BAR */}
       <div className='flex gap-1 w-96 justify-center items-center'>
         <Input
@@ -46,9 +44,7 @@ export default function TopBar() {
           placeholder='Search topics about my profile...'
         />
       </div>
-
     {/* LOGO */}
-    
     <div className='flex flex-col gap-2 items-center justify-center mb-3'>
     <Image
         src={profile}
