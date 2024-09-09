@@ -10,6 +10,13 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			spotifyGreen: '#1DB954',
+			spotifyBlack: '#191414',
+			spotifyWhite: '#FFFFFF',
+			spotifyGray: {
+			light: '#B3B3B3',
+			dark: '#121212',
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

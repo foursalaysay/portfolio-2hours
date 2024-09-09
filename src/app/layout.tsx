@@ -36,7 +36,7 @@ export default function RootLayout({
           <TopBar />\
           <div className="flex gap-2 p-5 bg-black">
             <LeftSideBar />
-            {children}
+              {children}
             <RightSidebar />
           </div>
         </div>

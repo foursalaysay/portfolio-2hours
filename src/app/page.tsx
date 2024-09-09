@@ -1,9 +1,9 @@
-
-
 export default function Home() {
+
+
   return (
-   <div>
-     Therese Dalumpines
+   <div className="w-full bg-spotifyGray-dark rounded-md">
+     
    </div>
   );
 }
