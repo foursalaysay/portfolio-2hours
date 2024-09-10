@@ -4,10 +4,16 @@ import Image from 'next/image'
 
 export default function TopImage(){
   return (
-    <div className='w-full h-[324px] rounded-md bg-center bg-cover shadow-inner flex items-center p-4'
-            style={{ backgroundImage: 'url(/qer.jpg)' }} 
-        >
-            <div className='flex-shrink-0'>
+    <div className='w-full h-[324px] rounded-md bg-center bg-cover shadow-inner flex items-center p-4 relative'
+    style={{ backgroundImage: 'url(/qer.jpg)' }}
+>
+   {/* Pseudo-element created with Tailwind classes */}
+   <div className='absolute inset-0 bg-cover bg-center'
+        style={{ backgroundImage: 'url(/qer.jpg)', filter: 'blur(50px)' }}
+   ></div>
+
+   {/* Content */}
+            <div className='relative z-10 flex-shrink-0'>
                 <Image
                     className='w-[200px] h-[200px] rounded-full'
                     src='/yeah.jpg'
@@ -16,12 +22,14 @@ export default function TopImage(){
                     height={200}
                 />
             </div>
-            <div className='ml-4'>
-                <h1 className='text-8xl font-bold text-white mb-1'>Kyle Salaysay</h1>
+            <div className='relative z-10 ml-4'>
+               
+                <h1 className='text-9xl font-black text-white mb-2 font-poppins'>Kyle</h1>
                 <h5 className='ml-2 text-lg text-white'>
                     Rosen Ambassador | Web3 Enthusiast | Student | Aspiring Blockchain Developer
                 </h5>
             </div>
-        </div>
+</div>
+
     )
 }

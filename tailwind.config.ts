@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			poppins: ['Poppins', 'sans-serif'], // Add Poppins as a custom font
+		  },
   		colors: {
 			spotifyGreen: '#1DB954',
 			spotifyBlack: '#191414',
