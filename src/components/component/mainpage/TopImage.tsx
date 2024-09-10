@@ -23,8 +23,7 @@ export default function TopImage(){
                 />
             </div>
             <div className='relative z-10 ml-4'>
-               
-                <h1 className='text-9xl font-black text-white mb-2 font-poppins'>Kyle</h1>
+                <h1 className='text-9xl font-black text-white font-poppins pb-5'>Kyle</h1>
                 <h5 className='ml-2 text-lg text-white'>
                     Rosen Ambassador | Web3 Enthusiast | Student | Aspiring Blockchain Developer
                 </h5>
