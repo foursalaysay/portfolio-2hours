@@ -21,7 +21,7 @@ export default function Recent() {
         <ScrollArea className='w-full h-[400px]'>
             {SidebarInfo.map((item, index) => (
                 <div key={index} className='w-full border-2 border-spotifyGreen rounded-md px-4 py-5 mt-5 flex flex-col gap-3'>
-                 <h3 className='text-2xl font-bold align-left'>{item.title}</h3>
+                <h3 className='text-2xl font-bold align-left'>{item.title}</h3>
                 <Image
                     src={item.image}
                     alt={item.title}

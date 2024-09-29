@@ -12,6 +12,17 @@ export default function TopImage(){
         style={{ backgroundImage: 'url(/qer.jpg)', filter: 'blur(50px)' }}
    ></div>
 
+    {/* sidebar */}
+
+
+
+
+
+
+
+
+
+    
    {/* Content */}
             <div className='relative z-10 flex-shrink-0'>
                 <Image
