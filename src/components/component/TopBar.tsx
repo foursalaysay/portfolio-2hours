@@ -43,6 +43,7 @@ export default function TopBar() {
           className='w-[300px] lg:w-[600px] px-4 py-3 mt-2 rounded-full h-12 bg-[#333333] text-sm text-white border-none'
           placeholder='Search topics about my profile...'
         />
+      <a href="/project">Projects</a>
       </div>
     {/* LOGO */}
     <div className='flex flex-col gap-2 items-center justify-center mb-3'>
